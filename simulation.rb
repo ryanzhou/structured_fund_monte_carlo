@@ -63,9 +63,9 @@ class Simulation
   def stock_index_movement
     dist = Rubystats::NormalDistribution.new(daily_rm, daily_v)
     delta = dist.rng.round(4)
-    @index_val *= (1 + delta)
+    @index_val = (@index_val * (1 + delta)).round(2)
     old_m_nav = @m_nav
-    @m_nav *= (1 + delta)
+    @m_nav = (@m_nav * (1 + delta)).round(4)
     @b_nav = @m_nav * 2 - @a_nav
   end
 
