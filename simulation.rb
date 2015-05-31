@@ -16,7 +16,7 @@ class Simulation
     dat: BigDecimal.new("0.25"),
     r: BigDecimal.new("0.08"),
     rm: BigDecimal.new("0.10"),
-    v: BigDecimal.new("0.35"),
+    v: BigDecimal.new("0.30"),
     d: 1,
     years: 50,
     debug: false,
