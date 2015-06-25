@@ -10,7 +10,7 @@ class Simulation
   def initialize(
     a_nav: BigDecimal.new("1.0"),
     m_nav: BigDecimal.new("1.0"),
-    i: BigDecimal.new("0.025"),
+    i: BigDecimal.new("0.0225"),
     m: BigDecimal.new("0.03"),
     uat: BigDecimal.new("1.5"),
     dat: BigDecimal.new("0.25"),
@@ -18,7 +18,7 @@ class Simulation
     rm: BigDecimal.new("0.10"),
     v: BigDecimal.new("0.30"),
     d: 1,
-    years: 50,
+    years: 6,
     debug: false,
     show_price: false
   )
